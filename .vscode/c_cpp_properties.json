@@ -1,9 +1,11 @@
 {
+    "version": 4,
     "configurations": [
         {
-            "name": "K&R C",
+            "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}",
+                "C:/tools/msys64/ucrt64/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -12,14 +14,7 @@
             ],
             "compilerPath": "C:/tools/msys64/ucrt64/bin/gcc.exe",
             "cStandard": "c89",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-x64",
-            "compilerArgs": [
-                "-Wall",
-                "-Wextra",
-                "-pedantic"
-            ]
+            "intelliSenseMode": "gcc-x64"
         }
-    ],
-    "version": 4
+    ]
 }

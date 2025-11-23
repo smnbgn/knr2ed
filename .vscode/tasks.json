@@ -2,38 +2,22 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build K&R exercise",
+            "label": "build C file",
             "type": "shell",
-            "command": "C:/tools/msys64/uctr64/bin/gcc.exe",
+            "command": "gcc",
             "args": [
                 "-std=c89",
-                "-pedantic",
                 "-Wall",
                 "-Wextra",
-                "-Werror",
-                "-g",
-                "${file}",
                 "-o",
-                "${workspaceFolder}/bin/${fileBasenameNoExtension}.exe"
+                "${fileBasenameNoExtension}.exe",
+                "${file}"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            },
+            "group": "build",
             "problemMatcher": [
                 "$gcc"
             ],
-            "detail": "Compiler: C:/tools/msys64/uctr64/bin/gcc.exe"
-        },
-        {
-            "label": "clean bin directory",
-            "type": "shell",
-            "command": "rm",
-            "args": [
-                "-rf",
-                "${workspaceFolder}/bin/*"
-            ],
-            "group": "build"
+            "detail": "Compile the active C file using gcc (ANSI C89)."
         },
         {
             "type": "cppbuild",
@@ -44,10 +28,7 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra",
-                "-pedantic"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "C:/tools/msys64/ucrt64/bin"
