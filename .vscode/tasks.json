@@ -4,7 +4,7 @@
         {
             "label": "build C file",
             "type": "shell",
-            "command": "gcc",
+            "command": "C:/tools/msys64/ucrt64/bin/gcc.exe",
             "args": [
                 "-std=c89",
                 "-Wall",
