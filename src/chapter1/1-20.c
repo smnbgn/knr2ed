@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define TABSTOP 4
+#define TABSTOP 8
 #define MAXLINE 1000
 
 int getline(char s[], int lim);
@@ -18,7 +18,8 @@ int main()
     return 0;
 }
 
-int getline(char s[], int lim) {
+int getline(char s[], int lim) 
+{
     int c, i;
 
     for (i=0; i<lim-1 && (c=getchar())!=EOF && c!='\n'; ++i)
@@ -31,7 +32,8 @@ int getline(char s[], int lim) {
     return i;
 }
 
-void detab(char output[], char input[]) {
+void detab(char output[], char input[]) 
+{
     int i, j, k, spaces;
 
     for (i=0, j=0; input[i] != '\0'; ++i) {
@@ -44,7 +46,6 @@ void detab(char output[], char input[]) {
         } else {
             output[j++] = input[i];
         }
-
     }
     output[j] = '\0';
 }
