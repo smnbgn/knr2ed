@@ -44,7 +44,7 @@ int main()
         }
     }
 
-    /* handle case when blanks exist, but no \n before EOF*/
+    /* handle case when blanks exist, but no \n before EOF */
     while (blanks > 0) {
         putchar(' ');
         blanks--;
@@ -53,6 +53,7 @@ int main()
     return 0;
 }
 
-int calc_blanks_to_tab(int pos) {
+int calc_blanks_to_tab(int pos) 
+{
     return TABSTOP - ((pos - 1) % TABSTOP);
 }
