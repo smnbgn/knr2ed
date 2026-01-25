@@ -19,7 +19,7 @@ int main()
     printf("long max: %ld\n", LONG_MAX);
     printf("unsigned long max: %u\n", ULONG_MAX);
 
-    printf("long long max: %lld\n", LLONG_MAX);
     printf("long long min: %lld\n", LLONG_MIN);
+    printf("long long max: %lld\n", LLONG_MAX);
     printf("unsigned long long max: %llu\n", ULLONG_MAX);
 }
