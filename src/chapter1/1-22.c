@@ -33,8 +33,8 @@ int main()
             last_blank = pos;  
         }
         
-        /* blank in the line */
         if (pos == COLUMN_LIMIT) {
+             /* blank in the line */
             if (last_blank >= 0) {
                 for (i = 0; i <= last_blank; i++) {
                     putchar(buffer[i]);
